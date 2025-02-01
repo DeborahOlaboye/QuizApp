@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.quiz_start {
+    background-color: rgb(7, 149, 250);
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 5rem 5rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    height: 70%;
+    flex-wrap: wrap;
+}
+
+.title{
+    font-size: 3rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title_content {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 1rem;
+    align-self: stretch;
+}
+
+.title_content p {
+    font-size: 1rem;
+}
+
+.start {
+    color: rgb(7, 149, 250);
+    background-color: white;
+    border-radius: 5px;
+    border: none;
+    padding: 0.15rem;
+    font-size: 1.5rem;
+    font-weight:400;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.quiz_page {
+    color: white;
+    /* display: none; */
+}
+
+.next {
+    color: rgb(7, 149, 250);
+    background-color: white;
+    border-radius: 5px;
+    border-color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.quit {
+    color: white;
+    background-color: red;
+    border-radius: 5px;
+    border-color: red;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.previous {
+    color: rgb(7, 149, 250);
+    background-color: white;
+    border-radius: 5px;
+    border-color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.quiz_container {
+    background-color: rgb(7, 149, 250);
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    padding: 5rem 5rem;
+    display: flex;
+    flex-direction: column;
+    transform: translate(50%, 50%);
+    display: none;
+}

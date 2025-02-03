@@ -24,340 +24,340 @@ const questions = [
         correctAnswer: 'HyperText Markup Language'
     },
     {
-        question: 'Who is the father of HTML?',
-        answers: ['Rasmus Lerdorf',
-            'Tim Berners-Lee',
-            'Brendan Eich',
-            'Sergey Brin'],
-        correctAnswer: 'Tim Berners-Lee'
+        question: 'What is the correct syntax of doctype in HTML5?',
+        answers: ['</doctype html>',
+            '<doctype html>',
+            '<doctype html!>',
+            '<!doctype html>'],
+        correctAnswer: '<!doctype html>' 
     },
     {
-        question: 'HTML stands for __________',
-        answers: ['HyperText Markup Language',
-            'HyperText Machine Language',
-            'HyperText Marking Language',
-            'HighText Marking Language'],
-        correctAnswer: 'HyperText Markup Language'
+        question: 'Which of the following is used to read an HTML page and render it?',
+        answers: ['Web server',
+            'Web network',
+            'Web browser',
+            'Web matrix'],
+        correctAnswer: 'Web browser'
     },
     {
-        question: 'What is HTML?',
-        answers: ['HTML describes the structure of a webpage', 
-            'HTML is the standard markup language mainly used to create web pages',
-            'HTML consists of a set of elements that helps the browser how to view the content',
-            'All of the mentioned'],
-        correctAnswer: 'All of the mentioned'
+        question: 'Which of the following is not a difference between HTML and XHTML?',
+        answers: ['Charset in both html and xhtml is “text/html”', 
+            'Tags and attributes are case-insensitive in HTML but not in XHTML',
+            'Special characters must be escaped using character entities in XHTML unlike HTML',
+            'Charset in html is “text/html” where as in xhtml it is “application/xml+xhtml”'],
+        correctAnswer: 'Charset in both html and xhtml is “text/html”'
     },
     {
-        question: 'Who is the father of HTML?',
-        answers: ['Rasmus Lerdorf',
-            'Tim Berners-Lee',
-            'Brendan Eich',
-            'Sergey Brin'],
-        correctAnswer: 'Tim Berners-Lee'
+        question: 'Which of the following tag is used for inserting the largest heading in HTML?',
+        answers: ['head',
+            '<h1>',
+            '<h6>',
+            'heading'],
+        correctAnswer: '<h1>'
     },
     {
-        question: 'HTML stands for __________',
-        answers: ['HyperText Markup Language',
-            'HyperText Machine Language',
-            'HyperText Marking Language',
-            'HighText Marking Language'],
-        correctAnswer: 'HyperText Markup Language'
+        question: 'What is DOM in HTML?',
+        answers: ['Language dependent application programming',
+            'Hierarchy of objects in ASP.NET',
+            'Application programming interface',
+            'Convention for representing and interacting with objects in html documents'],
+        correctAnswer: 'Convention for representing and interacting with objects in html documents'
     },
     {
-        question: 'Who is the father of HTML?',
-        answers: ['Rasmus Lerdorf',
-            'Tim Berners-Lee',
-            'Brendan Eich',
-            'Sergey Brin'],
-        correctAnswer: 'Tim Berners-Lee'
+        question: 'In which part of the HTML metadata is contained?',
+        answers: ['head tag',
+            'title tag',
+            'html tag',
+            'body tag'],
+        correctAnswer: 'head tag'
     },
     {
-        question: 'HTML stands for __________',
-        answers: ['HyperText Markup Language',
-            'HyperText Machine Language',
-            'HyperText Marking Language',
-            'HighText Marking Language'],
-        correctAnswer: 'HyperText Markup Language'
+        question: 'Which element is used to get highlighted text in HTML5?',
+        answers: ['<u>',
+            '<mark>',
+            '<highlight>',
+            '<b>'],
+        correctAnswer: '<mark>'
     },
     {
-        question: 'What is HTML?',
-        answers: ['HTML describes the structure of a webpage', 
-            'HTML is the standard markup language mainly used to create web pages',
-            'HTML consists of a set of elements that helps the browser how to view the content',
-            'All of the mentioned'],
-        correctAnswer: 'All of the mentioned'
+        question: 'Which of the following is not a HTML5 tag?',
+        answers: ['<track>', 
+            '<video>',
+            '<slider>',
+            '<source>'],
+        correctAnswer: '<video>'
     },
     {
-        question: 'Who is the father of HTML?',
-        answers: ['Rasmus Lerdorf',
-            'Tim Berners-Lee',
-            'Brendan Eich',
-            'Sergey Brin'],
-        correctAnswer: 'Tim Berners-Lee'
+        question: 'How do we write comments in HTML?',
+        answers: ['</…….>',
+            '<!……>',
+            '</……/>',
+            '<…….!>'],
+        correctAnswer: '<!……>'
     },
     {
-        question: 'HTML stands for __________',
-        answers: ['HyperText Markup Language',
-            'HyperText Machine Language',
-            'HyperText Marking Language',
-            'HighText Marking Language'],
-        correctAnswer: 'HyperText Markup Language'
+        question: 'Which of the following elements in HTML5 defines video or movie content?',
+        answers: ['<video>',
+            '<movie>',
+            '<audio>',
+            '<media>'],
+        correctAnswer: '<video>'
     },
     {
-        question: 'Who is the father of HTML?',
-        answers: ['Rasmus Lerdorf',
-            'Tim Berners-Lee',
-            'Brendan Eich',
-            'Sergey Brin'],
-        correctAnswer: 'Tim Berners-Lee'
+        question: 'Which of the following is not the element associated with the HTML table layout?',
+        answers: ['alignment',
+            'color',
+            'size',
+            'spanning'],
+        correctAnswer: 'color'
     },
     {
-        question: 'HTML stands for __________',
-        answers: ['HyperText Markup Language',
-            'HyperText Machine Language',
-            'HyperText Marking Language',
-            'HighText Marking Language'],
-        correctAnswer: 'HyperText Markup Language'
+        question: 'Which element is used for or styling HTML5 layout?',
+        answers: ['CSS',
+            'jQuery',
+            'JavaScript',
+            'PHP'],
+        correctAnswer: 'CSS'
     },
     {
-        question: 'What is HTML?',
-        answers: ['HTML describes the structure of a webpage', 
-            'HTML is the standard markup language mainly used to create web pages',
-            'HTML consists of a set of elements that helps the browser how to view the content',
-            'All of the mentioned'],
-        correctAnswer: 'All of the mentioned'
+        question: 'Which HTML tag is used for making character appearance bold?',
+        answers: ['<u>content</u>', 
+            '<b>content</b>',
+            '<br>content</br>',
+            '<i>content</i>'],
+        correctAnswer: '<b>content</b>'
     },
     {
-        question: 'Who is the father of HTML?',
-        answers: ['Rasmus Lerdorf',
-            'Tim Berners-Lee',
-            'Brendan Eich',
-            'Sergey Brin'],
-        correctAnswer: 'Tim Berners-Lee'
+        question: 'Which HTML tag is used to insert an image?',
+        answers: ['<img url=”htmllogo.jpg” />',
+            '<img alt=”htmllogo.jpg” />',
+            '<img src=”htmllogo.jpg” />',
+            '<img link=”htmllogo.jpg” />'],
+        correctAnswer: '<img src=”htmllogo.jpg” />'
     },
     {
-        question: 'HTML stands for __________',
-        answers: ['HyperText Markup Language',
-            'HyperText Machine Language',
-            'HyperText Marking Language',
-            'HighText Marking Language'],
-        correctAnswer: 'HyperText Markup Language'
+        question: 'HTML is a subset of ___________',
+        answers: [' SGMT',
+            ' SGML',
+            ' SGME',
+            'XHTML'],
+        correctAnswer: ' SGML'
     },
     {
-        question: 'Who is the father of HTML?',
-        answers: ['Rasmus Lerdorf',
-            'Tim Berners-Lee',
-            'Brendan Eich',
-            'Sergey Brin'],
-        correctAnswer: 'Tim Berners-Lee'
+        question: 'Which character is used to represent when a tag is closed in HTML?',
+        answers: ['#',
+            '!',
+            '/',
+            '\\'],
+        correctAnswer: '/'
     },
     {
-        question: 'HTML stands for __________',
-        answers: ['HyperText Markup Language',
-            'HyperText Machine Language',
-            'HyperText Marking Language',
-            'HighText Marking Language'],
-        correctAnswer: 'HyperText Markup Language'
+        question: 'Among the following, which is the HTML paragraph tag?',
+        answers: ['<p>',
+            '<pre>',
+            '<hr>',
+            '<a>'],
+        correctAnswer: '<p>'
     },
     {
-        question: 'What is HTML?',
-        answers: ['HTML describes the structure of a webpage', 
-            'HTML is the standard markup language mainly used to create web pages',
-            'HTML consists of a set of elements that helps the browser how to view the content',
-            'All of the mentioned'],
-        correctAnswer: 'All of the mentioned'
+        question: 'In HTML, which attribute is used to create a link that opens in a new window tab?',
+        answers: ['src=”_blank”', 
+            'alt=”_blank”',
+            'target=”_self',
+            'target=”_blank”'],
+        correctAnswer: 'target=”_blank”'
     },
     {
-        question: 'Who is the father of HTML?',
-        answers: ['Rasmus Lerdorf',
-            'Tim Berners-Lee',
-            'Brendan Eich',
-            'Sergey Brin'],
-        correctAnswer: 'Tim Berners-Lee'
+        question: 'Which HTML element is used for short quote?',
+        answers: ['<em>',
+            '<abbr>',
+            '<q>',
+            '<blockquote>'],
+        correctAnswer: '<q>'
     },
     {
-        question: 'HTML stands for __________',
-        answers: ['HyperText Markup Language',
-            'HyperText Machine Language',
-            'HyperText Marking Language',
-            'HighText Marking Language'],
-        correctAnswer: 'HyperText Markup Language'
+        question: ' Which of the following HTML tag is used to create an unordered list?',
+        answers: ['<ol>',
+            '<ul>',
+            '<li>',
+            '<ll>'],
+        correctAnswer: '<ul>'
     },
     {
-        question: 'Who is the father of HTML?',
-        answers: ['Rasmus Lerdorf',
-            'Tim Berners-Lee',
-            'Brendan Eich',
-            'Sergey Brin'],
-        correctAnswer: 'Tim Berners-Lee'
+        question: 'Which HTML element is used for abbreviation or acronym?',
+        answers: ['<abbr>',
+            '<blockquote>',
+            '<q>',
+            '<em>'],
+        correctAnswer: '<abbr>'
     },
     {
-        question: 'HTML stands for __________',
-        answers: ['HyperText Markup Language',
-            'HyperText Machine Language',
-            'HyperText Marking Language',
-            'HighText Marking Language'],
-        correctAnswer: 'HyperText Markup Language'
+        question: 'Which of the following HTML tag is used to add a row in a table?',
+        answers: ['<th>',
+            '<td>',
+            '<tr>',
+            '<tt>'],
+        correctAnswer: '<tr>'
     },
     {
-        question: 'What is HTML?',
-        answers: ['HTML describes the structure of a webpage', 
-            'HTML is the standard markup language mainly used to create web pages',
-            'HTML consists of a set of elements that helps the browser how to view the content',
-            'All of the mentioned'],
-        correctAnswer: 'All of the mentioned'
+        question: 'What is the work of <address> element in HTML5?',
+        answers: ['contains IP address', 
+            'contains home address',
+            'contains url',
+            'contains contact details for author'],
+        correctAnswer: 'contains contact details for author'
     },
     {
-        question: 'Who is the father of HTML?',
-        answers: ['Rasmus Lerdorf',
-            'Tim Berners-Lee',
-            'Brendan Eich',
-            'Sergey Brin'],
-        correctAnswer: 'Tim Berners-Lee'
+        question: 'Which of the following tag is used to create a text area in HTML Form?',
+        answers: ['<textarea> </textarea>',
+            '<text></text>',
+            '<input type=”text” />',
+            '<input type=”textarea” />'],
+        correctAnswer: '<textarea> </textarea>'
     },
     {
-        question: 'HTML stands for __________',
-        answers: ['HyperText Markup Language',
-            'HyperText Machine Language',
-            'HyperText Marking Language',
-            'HighText Marking Language'],
-        correctAnswer: 'HyperText Markup Language'
+        question: 'To show deleted text, which HTML element is used?',
+        answers: ['<del>',
+            '<em>',
+            '<strong>',
+            '<ins>'],
+        correctAnswer: '<del>'
     },
     {
-        question: 'Who is the father of HTML?',
-        answers: ['Rasmus Lerdorf',
-            'Tim Berners-Lee',
-            'Brendan Eich',
-            'Sergey Brin'],
-        correctAnswer: 'Tim Berners-Lee'
+        question: 'What is the correct syntax of web address?',
+        answers: ['port://domain.filenmae:path/scheme/prefix',
+            'prefix://scheme.port:domain/filename/path',
+            'path://prefix.port:domain/filename/scheme',
+            'scheme://prefix.domain:port/path/filename'],
+        correctAnswer: 'scheme://prefix.domain:port/path/filename'
     },
     {
-        question: 'HTML stands for __________',
-        answers: ['HyperText Markup Language',
-            'HyperText Machine Language',
-            'HyperText Marking Language',
-            'HighText Marking Language'],
-        correctAnswer: 'HyperText Markup Language'
+        question: 'Which tag is used to create a dropdown in HTML Form?',
+        answers: ['input>',
+            '<select>',
+            '<text>',
+            ' <textarea>'],
+        correctAnswer: '<select>'
     },
     {
-        question: 'What is HTML?',
-        answers: ['HTML describes the structure of a webpage', 
-            'HTML is the standard markup language mainly used to create web pages',
-            'HTML consists of a set of elements that helps the browser how to view the content',
-            'All of the mentioned'],
-        correctAnswer: 'All of the mentioned'
+        question: 'Which tag is used to create a numbered list in HTML?',
+        answers: ['<ol>', 
+            '<ul>',
+            '<li>',
+            '<ll>'],
+        correctAnswer: '<ol>'
     },
     {
-        question: 'Who is the father of HTML?',
-        answers: ['Rasmus Lerdorf',
-            'Tim Berners-Lee',
-            'Brendan Eich',
-            'Sergey Brin'],
-        correctAnswer: 'Tim Berners-Lee'
+        question: 'How to create a checkbox in HTML Form?',
+        answers: ['<input type=”text”>',
+            '<input type=”textarea”>',
+            '<input type=”checkbox”>',
+            '<input type=”button”>'],
+        correctAnswer: '<input type=”checkbox”>'
     },
     {
-        question: 'HTML stands for __________',
-        answers: ['HyperText Markup Language',
-            'HyperText Machine Language',
-            'HyperText Marking Language',
-            'HighText Marking Language'],
-        correctAnswer: 'HyperText Markup Language'
+        question: 'Which of the following extension is used to save an HTML file?',
+        answers: ['.hl',
+            '.h',
+            '.htl',
+            '.html'],
+        correctAnswer: '.html'
     },
     {
-        question: 'Who is the father of HTML?',
-        answers: ['Rasmus Lerdorf',
-            'Tim Berners-Lee',
-            'Brendan Eich',
-            'Sergey Brin'],
-        correctAnswer: 'Tim Berners-Lee'
+        question: 'Which tag is used to create a blank line in HTML?',
+        answers: ['<b>',
+            '<br>',
+            '<em>',
+            '<a>'],
+        correctAnswer: '<br>'
     },
     {
-        question: 'HTML stands for __________',
-        answers: ['HyperText Markup Language',
-            'HyperText Machine Language',
-            'HyperText Marking Language',
-            'HighText Marking Language'],
-        correctAnswer: 'HyperText Markup Language'
+        question: 'Which HTML tag is used to convert the plain text into italic format?',
+        answers: ['<b>',
+            '<p>',
+            '<i>',
+            '<a>'],
+        correctAnswer: '<a>'
     },
     {
-        question: 'What is HTML?',
-        answers: ['HTML describes the structure of a webpage', 
-            'HTML is the standard markup language mainly used to create web pages',
-            'HTML consists of a set of elements that helps the browser how to view the content',
-            'All of the mentioned'],
-        correctAnswer: 'All of the mentioned'
+        question: 'What is the use of <hr/> tag in HTML?',
+        answers: ['For making content appearance italics', 
+            'To create vertical rule between sections',
+            'To create a line break',
+            'To create horizontal rule between sections'],
+        correctAnswer: 'To create horizontal rule between sections'
     },
     {
-        question: 'Who is the father of HTML?',
-        answers: ['Rasmus Lerdorf',
-            'Tim Berners-Lee',
-            'Brendan Eich',
-            'Sergey Brin'],
-        correctAnswer: 'Tim Berners-Lee'
+        question: 'Which attribute is not essential under <iframe>?',
+        answers: ['frameborder',
+            'width',
+            'height',
+            'src'],
+        correctAnswer: 'frameborder'
     },
     {
-        question: 'HTML stands for __________',
-        answers: ['HyperText Markup Language',
-            'HyperText Machine Language',
-            'HyperText Marking Language',
-            'HighText Marking Language'],
-        correctAnswer: 'HyperText Markup Language'
+        question: 'Which works similar to <b> element?',
+        answers: ['<blockquote>',
+            '<strong>',
+            '<em>',
+            '<i>'],
+        correctAnswer: '<strong>'
     },
     {
-        question: 'Who is the father of HTML?',
-        answers: ['Rasmus Lerdorf',
-            'Tim Berners-Lee',
-            'Brendan Eich',
-            'Sergey Brin'],
-        correctAnswer: 'Tim Berners-Lee'
+        question: 'Which tag is used to underline the text in HTML?',
+        answers: ['<p>',
+            '<u>',
+            '<i>',
+            '<ul>'],
+        correctAnswer: '<u>'
     },
     {
-        question: 'HTML stands for __________',
-        answers: ['HyperText Markup Language',
-            'HyperText Machine Language',
-            'HyperText Marking Language',
-            'HighText Marking Language'],
-        correctAnswer: 'HyperText Markup Language'
+        question: 'Which attribute specifies a unique alphanumeric identifier to be associated with an element?',
+        answers: ['type',
+            'article',
+            'id',
+            'class'],
+        correctAnswer: 'id'
     },
     {
-        question: 'What is HTML?',
-        answers: ['HTML describes the structure of a webpage', 
-            'HTML is the standard markup language mainly used to create web pages',
-            'HTML consists of a set of elements that helps the browser how to view the content',
-            'All of the mentioned'],
-        correctAnswer: 'All of the mentioned'
+        question: 'Which of the following is an HTML specification used to add more information to HTML tags?',
+        answers: ['Modifydata', 
+            'Minidata',
+            'Macrodata',
+            'Microdata'],
+        correctAnswer: 'Microdata'
     },
     {
-        question: 'Who is the father of HTML?',
-        answers: ['Rasmus Lerdorf',
-            'Tim Berners-Lee',
-            'Brendan Eich',
-            'Sergey Brin'],
-        correctAnswer: 'Tim Berners-Lee'
+        question: 'Which HTML element is used for YouTube videos?',
+        answers: ['<samp>',
+            '<small>',
+            '<frame>',
+            '<iframe>'],
+        correctAnswer: '<iframe>'
     },
     {
-        question: 'HTML stands for __________',
-        answers: ['HyperText Markup Language',
-            'HyperText Machine Language',
-            'HyperText Marking Language',
-            'HighText Marking Language'],
-        correctAnswer: 'HyperText Markup Language'
+        question: 'Which of the following HTML element is used for canvas graphics?',
+        answers: ['<css>',
+            '<paint>',
+            '<canvas>',
+            '<graphic>'],
+        correctAnswer: '<canvas>'
     },
     {
-        question: 'Who is the father of HTML?',
-        answers: ['Rasmus Lerdorf',
-            'Tim Berners-Lee',
-            'Brendan Eich',
-            'Sergey Brin'],
-        correctAnswer: 'Tim Berners-Lee'
+        question: 'The correct sequence of HTML tags for starting a webpage is ?',
+        answers: ['Head, Title, HTML, body',
+            'HTML, Body, Title, Head',
+            'HTML, Head, Title, Body',
+            'HTML, Head, Title, Body'],
+        correctAnswer: 'HTML, Head, Title, Body'
     },
     {
-        question: 'HTML stands for __________',
-        answers: ['HyperText Markup Language',
-            'HyperText Machine Language',
-            'HyperText Marking Language',
-            'HighText Marking Language'],
-        correctAnswer: 'HyperText Markup Language'
+        question: 'Which of the following tag is used for inserting the largest heading in HTML?',
+        answers: ['<h3>',
+            '<h1>',
+            '<h5>',
+            '<h6>'],
+        correctAnswer: '<h1>'
     },
     {
         question: 'What is HTML?',
@@ -532,7 +532,7 @@ document.addEventListener("DOMContentLoaded", loadQuestion);
 let storedTime = localStorage.getItem("quizTimer");
 let totalTime = storedTime !== null ? parseInt(storedTime) : 30 * 60; 
 let timer; 
-
+let score = 0;
 
 function startGlobalTimer() {
     clearInterval(timer); 

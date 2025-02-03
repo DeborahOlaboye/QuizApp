@@ -529,3 +529,51 @@ document.querySelector(".start").addEventListener("click", function() {
 document.addEventListener("DOMContentLoaded", loadQuestion);
 
 
+let storedTime = localStorage.getItem("quizTimer");
+let totalTime = storedTime !== null ? parseInt(storedTime) : 30 * 60; 
+let timer; 
+
+
+function startGlobalTimer() {
+    clearInterval(timer); 
+
+    timer = setInterval(() => {
+        if (totalTime <= 0) {
+            clearInterval(timer);
+            endQuiz();
+            return;
+        }
+
+        let minutes = Math.floor(totalTime / 60);
+        let seconds = totalTime % 60;
+
+        // Check if element exists before updating
+        let timeElement = document.querySelector(".time");
+        if (timeElement) {
+            timeElement.textContent = `${minutes}:${seconds < 10 ? "0" : ""}${seconds}`;
+        }
+
+        totalTime--; 
+
+        // Save updated time in localStorage
+        localStorage.setItem("quizTimer", totalTime);
+
+    }, 1000);
+}
+
+function endQuiz() {
+    alert("Time's up! Submitting quiz...");
+    localStorage.removeItem("quizTimer"); 
+}
+
+
+// Ensure timer starts when the start quiz button is clicked
+document.querySelector(".start").addEventListener("click", function() {
+    loadQuestion(); 
+    startGlobalTimer();
+});
+
+// Reset the timer when the user quits or navigates away
+window.addEventListener("beforeunload", () => {
+    localStorage.removeItem("quizTimer");
+});

@@ -219,6 +219,7 @@ body {
     /* position: absolute; */
     justify-content: space-between;
     align-items: flex-end;
+    flex-wrap: wrap;
 }
 
 .correct {

@@ -9,7 +9,7 @@
 <body>
     <div class="welcome">
         <h1>Welcome to Jasper Quiz App</h1>
-        <button class="start">Proceed</button>
+        <button class="proceed">Proceed</button>
     </div>
     <div class="quiz_rules">
         <h1>Rules of the Quiz</h1>
@@ -19,16 +19,16 @@
             <li>Each quiz session has a time limit of 30 minutes.</li>
             <li>Users can retry quizzes to improve their scores.</li>
         </ul>
-        <button class="start">I accept</button>
+        <button class="accept">I accept</button>
     </div>
     <div class="quiz_start">
-        <div class="title">Jasper Quiz App</div>
-    <div class="title_content">
-        <p>Time limit: 30 minutes</p>
-        <p>Number of questions: 50</p>
-        <p>Passing score: 70%</p>
-        <button class="start">Start Quiz</button>
-    </div>
+        <h2>Jasper Quiz App</h2>
+        <div class="title_content">
+            <p>Time limit: 30 minutes</p>
+            <p>Number of questions: 50</p>
+            <p>Passing score: 70%</p>
+            <button class="start">Start Quiz</button>
+        </div>
     </div>
     <div class="quiz_container">
         <header>
@@ -38,9 +38,10 @@
             </div>
         </header>
         <div class="quiz_page">
-            <div class="question_id">Question id</div>
+            <!-- <div class="question_id">Question id</div> -->
             <div class="question_text">Question</div>
             <div class="answers"></div>
+            <div class="feedback"></div>
             <div class="quiz_buttons">
                 <button class="previous">Previous Question</button>
                 <button class="next">Next Question</button>

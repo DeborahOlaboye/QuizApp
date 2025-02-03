@@ -11,7 +11,7 @@ body {
     align-items: center;
 }
 .quiz_start {
-    background-color: white;
+    background-color: rgb(7, 149, 250);
     position: absolute;
     justify-content: center;
     align-items: center;
@@ -115,7 +115,7 @@ body {
     transform: translate(-50%, -50%);
     width: 70%;
     height: 80%;
-    /* display: none; */
+    display: none;
 }
 
 .quiz_rules {
@@ -159,7 +159,7 @@ body {
     transform: translate(-50%, -50%);
     width: 70%;
     height: 70%;
-    display: none;
+    /* display: none; */
 }
 
 .welcome button {
@@ -187,4 +187,14 @@ body {
     /* position: absolute; */
     justify-content: space-between;
     align-items: flex-end;
+}
+
+.correct {
+    color: green;
+    font-weight: bold;
+}
+
+.incorrect {
+    color: red;
+    font-weight: bold;
 }

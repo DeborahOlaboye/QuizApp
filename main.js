@@ -399,7 +399,58 @@ const questions = [
             'HighText Marking Language'],
         correctAnswer: 'HyperText Markup Language'
     },
-]
+];
+
+const questionText = document.querySelector(".question_text");
+const answerContainer = document.querySelector(".answers");
+const questionNumber = document.querySelector(".question_number");
+const feedback = document.querySelector(".feedback");
+const userAnswers = []; 
+let userScore = 0;
+
+let currentQuestionIndex = 0;
+
+function loadQuestion() {
+    let currentQuestion = questions[currentQuestionIndex];
+    
+    questionNumber.textContent = `${currentQuestionIndex + 1}`;
+    questionText.textContent = currentQuestion.question;
+    feedback.textContent = "";
+
+    answerContainer.innerHTML = "";
+
+    // Loop through answers
+    currentQuestion.answers.forEach(answer => {
+        let label = document.createElement("label");
+        label.style.display = "block";
+        let input = document.createElement("input");
+        input.type = "radio";
+        input.name = "answer";
+        input.value = answer;
+
+        // Check if user already selected this answer
+        if (userAnswers[currentQuestionIndex] === answer) {
+            input.checked = true;
+        }
+
+        label.appendChild(input);
+        label.appendChild(document.createTextNode(" " + answer));
+        answerContainer.appendChild(label);
+
+        // Store user's answer on change
+        input.addEventListener("change", (e) => {
+            userAnswers[currentQuestionIndex] = e.target.value;
+        });
+    });
+}
+
+
+
+
+
+
+
+
 
 
 

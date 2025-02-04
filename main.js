@@ -1,403 +1,513 @@
 const questions = [
     {
-        question: 'What is HTML?',
-        answers: ['HTML describes the structure of a webpage', 
-            'HTML is the standard markup language mainly used to create web pages',
-            'HTML consists of a set of elements that helps the browser how to view the content',
-            'All of the mentioned'],
-        correctAnswer: 'All of the mentioned'
+        "question": "What is JavaScript?",
+        "answers": [
+            "a) JavaScript is a scripting language used to make the website interactive",
+            "b) JavaScript is an assembly language used to make the website interactive",
+            "c) JavaScript is a compiled language used to make the website interactive",
+            "d) None of the mentioned"
+        ],
+        "correctAnswer": "a\nExplanation: JavaScript is a scripting language used along with HTML and CSS to make the website interactive along. It is used both on the client-side and server-side."
     },
     {
-        question: 'Who is the father of HTML?',
-        answers: ['Rasmus Lerdorf',
-            'Tim Berners-Lee',
-            'Brendan Eich',
-            'Sergey Brin'],
-        correctAnswer: 'Tim Berners-Lee'
+        "question": "Which of the following is correct about JavaScript?",
+        "answers": [
+            "a) JavaScript is an Object-Based language",
+            "b) JavaScript is Assembly-language",
+            "c) JavaScript is an Object-Oriented language",
+            "d) JavaScript is a High-level language"
+        ],
+        "correctAnswer": "a\nExplanation: Although JavaScript is not an OOP (Object-Oriented Programming) language like Java or PHP, it is object based language. The standard threesome of polymorphism, encapsulation, and inheritance are the criteria for object orientation, and JavaScript fails to meet them."
     },
     {
-        question: 'HTML stands for __________',
-        answers: ['HyperText Markup Language',
-            'HyperText Machine Language',
-            'HyperText Marking Language',
-            'HighText Marking Language'],
-        correctAnswer: 'HyperText Markup Language'
+        "question": "Among the given statements, which statement defines closures in JavaScript?",
+        "answers": [
+            "a) JavaScript is a function that is enclosed with references to its inner function scope",
+            "b) JavaScript is a function that is enclosed with references to its lexical environment",
+            "c) JavaScript is a function that is enclosed with the object to its inner function scope",
+            "d) None of the mentioned"
+        ],
+        "correctAnswer": "b\nExplanation: A closure is a function that is enclosed with references to its lexical environment. A closure allows an inner function to access the scope of an outside function. Closures are formed every time a function is created in JavaScript, during function creation time."
     },
     {
-        question: 'What is the correct syntax of doctype in HTML5?',
-        answers: ['</doctype html>',
-            '<doctype html>',
-            '<doctype html!>',
-            '<!doctype html>'],
-        correctAnswer: '<!doctype html>' 
+        "question": "Arrays in JavaScript are defined by which of the following statements?",
+        "answers": [
+            "a) It is an ordered list of values",
+            "b) It is an ordered list of objects",
+            "c) It is an ordered list of string",
+            "d) It is an ordered list of functions"
+        ],
+        "correctAnswer": "a\nExplanation: An array in JavaScript is an ordered list of values, each value is referred to as an element, and it is identified by an index. An array can include values of many sorts and the length of an array dynamically sized."
     },
     {
-        question: 'Which of the following is used to read an HTML page and render it?',
-        answers: ['Web server',
-            'Web network',
-            'Web browser',
-            'Web matrix'],
-        correctAnswer: 'Web browser'
+        "question": "a) false",
+        "answers": [
+            "b) true",
+            "c) compilation error",
+            "d) runtime error"
+        ],
+        "correctAnswer": "a\nExplanation: A === operator in JS is only true if the operands are of the same type and the contents match. Two strings are strictly equal when they have the same sequence of characters, same length, and same characters in corresponding positions. In this case, we are comparing an integer and a string so it will be false."
     },
     {
-        question: 'Which of the following is not a difference between HTML and XHTML?',
-        answers: ['Charset in both html and xhtml is “text/html”', 
-            'Tags and attributes are case-insensitive in HTML but not in XHTML',
-            'Special characters must be escaped using character entities in XHTML unlike HTML',
-            'Charset in html is “text/html” where as in xhtml it is “application/xml+xhtml”'],
-        correctAnswer: 'Charset in both html and xhtml is “text/html”'
+        "question": "Which of the following is not javascript data types?",
+        "answers": [
+            "a) Null type",
+            "b) Undefined type",
+            "c) Number type",
+            "d) All of the mentioned"
+        ],
+        "correctAnswer": "d\nExplanation: JavaScript is a dynamic, loosely typed language. Variables in JavaScript aren’t tied to any specific value type, and each variable can be assigned and reassigned to values of all the types."
     },
     {
-        question: 'Which of the following tag is used for inserting the largest heading in HTML?',
-        answers: ['head',
-            '<h1>',
-            '<h6>',
-            'heading'],
-        correctAnswer: '<h1>'
+        "question": "Where is Client-side JavaScript code is embedded within HTML documents?",
+        "answers": [
+            "a) A URL that uses the special javascript:code",
+            "b) A URL that uses the special javascript:protocol",
+            "c) A URL that uses the special javascript:encoding",
+            "d) A URL that uses the special javascript:stack"
+        ],
+        "correctAnswer": "b\nExplanation: The Client-side JavaScript code is embedded within HTML documents in four ways : \n\nInline, between a pair of “script” tags \nFrom an external file specified by the src attribute of a “script” tag \nIn an HTML event handler attribute, such as onclick or onmouseover \nIn a URL that uses the special javascript: protocol."
     },
     {
-        question: 'What is DOM in HTML?',
-        answers: ['Language dependent application programming',
-            'Hierarchy of objects in ASP.NET',
-            'Application programming interface',
-            'Convention for representing and interacting with objects in html documents'],
-        correctAnswer: 'Convention for representing and interacting with objects in html documents'
+        "question": "Which of the following object is the main entry point to all client-side JavaScript features and APIs?",
+        "answers": [
+            "a) Position",
+            "b) Window",
+            "c) Standard",
+            "d) Location"
+        ],
+        "correctAnswer": "b\nExplanation: All client-side JavaScript features and APIs are accessed through the Window object. It represents a web browser window or frame, and the identifier window can be used to refer to it."
     },
     {
-        question: 'In which part of the HTML metadata is contained?',
-        answers: ['head tag',
-            'title tag',
-            'html tag',
-            'body tag'],
-        correctAnswer: 'head tag'
+        "question": "Which of the following can be used to call a JavaScript Code Snippet?",
+        "answers": [
+            "a) Function/Method",
+            "b) Preprocessor",
+            "c) Triggering Event",
+            "d) RMI"
+        ],
+        "correctAnswer": "a\nExplanation: A function call to the element on which JavaScript is to be run can be used to invoke JavaScript code. Other techniques include onclick, onload, and onsubmit, among others."
     },
     {
-        question: 'Which element is used to get highlighted text in HTML5?',
-        answers: ['<u>',
-            '<mark>',
-            '<highlight>',
-            '<b>'],
-        correctAnswer: '<mark>'
+        "question": "Which of the following explains correctly what happens when a JavaScript program is developed on a Unix Machine?",
+        "answers": [
+            "a) will work perfectly well on a Windows Machine",
+            "b) will be displayed as JavaScript text on the browser",
+            "c) will throw errors and exceptions",
+            "d) must be restricted to a Unix Machine only"
+        ],
+        "correctAnswer": "a\nExplanation: Because JS can run on a variety of operating systems, an application written for UNIX will run just as well on Windows."
     },
     {
-        question: 'Which of the following is not a HTML5 tag?',
-        answers: ['<track>', 
-            '<video>',
-            '<slider>',
-            '<source>'],
-        correctAnswer: '<video>'
+        "question": "Which of the following scoping type does JavaScript use?",
+        "answers": [
+            "a) Sequential",
+            "b) Segmental",
+            "c) Lexical",
+            "d) Literal"
+        ],
+        "correctAnswer": "c\nExplanation: JavaScript, like most current programming languages, employs lexical scoping. This means that functions are performed with the variable scope in effect when they were defined, rather than the variable scope in effect when they are invoked."
     },
     {
-        question: 'How do we write comments in HTML?',
-        answers: ['</…….>',
-            '<!……>',
-            '</……/>',
-            '<…….!>'],
-        correctAnswer: '<!……>'
+        "question": "What is the basic difference between JavaScript and Java?",
+        "answers": [
+            "a) Functions are considered as fields",
+            "b) Functions are values, and there is no hard distinction between methods and fields",
+            "c) Variables are specific",
+            "d) There is no difference"
+        ],
+        "correctAnswer": "b\nExplanation: Java is an object-oriented programming language, while JS is an object-oriented scripting language. The main difference between JavaScript and Java is that functions are values, while methods and fields are not clearly defined."
     },
     {
-        question: 'Which of the following elements in HTML5 defines video or movie content?',
-        answers: ['<video>',
-            '<movie>',
-            '<audio>',
-            '<media>'],
-        correctAnswer: '<video>'
+        "question": "Why JavaScript Engine is needed?",
+        "answers": [
+            "a) Both Compiling & Interpreting the JavaScript",
+            "b) Parsing the javascript",
+            "c) Interpreting the JavaScript",
+            "d) Compiling the JavaScript"
+        ],
+        "correctAnswer": "c\nExplanation: For the most part, the JS Engine is used to interpret JavaScript. It’s used to parse javascript and run it on a web page."
     },
     {
-        question: 'Which of the following is not the element associated with the HTML table layout?',
-        answers: ['alignment',
-            'color',
-            'size',
-            'spanning'],
-        correctAnswer: 'color'
+        "question": "Which of the following methods/operation does javascript use instead of == and !=?",
+        "answers": [
+            "a) JavaScript uses equalto()",
+            "b) JavaScript uses equals() and notequals() instead",
+            "c) JavaScript uses bitwise checking",
+            "d) JavaScript uses === and !== instead"
+        ],
+        "correctAnswer": "d\nExplanation: The comma operator, bitwise operators, and the ++ and — operators are not included in the subset. It also forbids the usage of == and!= due to the type conversion they do, instead requiring the use of === and!==."
     },
     {
-        question: 'Which element is used for or styling HTML5 layout?',
-        answers: ['CSS',
-            'jQuery',
-            'JavaScript',
-            'PHP'],
-        correctAnswer: 'CSS'
+        "question": "Why event handlers is needed in JS?",
+        "answers": [
+            "a) Allows JavaScript code to alter the",
+            "of windows",
+            "b) Adds innerHTML page to the code",
+            "c) Change the server location",
+            "d) Performs handling of exceptions and occurrences"
+        ],
+        "correctAnswer": "a\nExplanation: JS code can change the behavior of windows, documents, and the elements that make up those documents via event handlers."
     },
     {
-        question: 'Which HTML tag is used for making character appearance bold?',
-        answers: ['<u>content</u>', 
-            '<b>content</b>',
-            '<br>content</br>',
-            '<i>content</i>'],
-        correctAnswer: '<b>content</b>'
+        "question": "Which of the following is not a framework?",
+        "answers": [
+            "a) JavaScript .NET",
+            "b) JavaScript",
+            "c) Cocoa JS",
+            "d) jQuery"
+        ],
+        "correctAnswer": "b\nExplanation: jQuery, which is used in web development, is one of the most popular frameworks. JavaScript is a scripting language, not a framework, in this case."
     },
     {
-        question: 'Which HTML tag is used to insert an image?',
-        answers: ['<img url=”htmllogo.jpg” />',
-            '<img alt=”htmllogo.jpg” />',
-            '<img src=”htmllogo.jpg” />',
-            '<img link=”htmllogo.jpg” />'],
-        correctAnswer: '<img src=”htmllogo.jpg” />'
+        "question": "Which of the following is the property that is triggered in response to JS errors?",
+        "answers": [
+            "a) onclick",
+            "b) onerror",
+            "c) onmessage",
+            "d) onexception"
+        ],
+        "correctAnswer": "b\nExplanation: The Window object’s onerror property acts as an event handler, and it is triggered when JavaScript problems occur. However, because it is called with various arguments, it isn’t a genuine event handler."
     },
     {
-        question: 'HTML is a subset of ___________',
-        answers: [' SGMT',
-            ' SGML',
-            ' SGME',
-            'XHTML'],
-        correctAnswer: ' SGML'
+        "question": "Which of the following is not an error in JavaScript?",
+        "answers": [
+            "a) Missing of Bracket",
+            "b) Division by zero",
+            "c) Syntax error",
+            "d) Missing of semicolons"
+        ],
+        "correctAnswer": "b\nExplanation: In JavaScript, division by zero does not result in an error; it just returns infinity or negative infinity. However, because zero divided by zero has no well-defined value, the result of this operation is the unusual not-a-number value, which is written as NaN."
+    },  
+    {
+        "question": "Who developed Python Programming Language?",
+        "answers": [
+            "a) Wick van Rossum",
+            "b) Rasmus Lerdorf",
+            "c) Guido van Rossum",
+            "d) Niene Stom"
+        ],
+        "correctAnswer": "c\nExplanation: Python language is designed by a Dutch programmer Guido van Rossum in the Netherlands."
     },
     {
-        question: 'Which character is used to represent when a tag is closed in HTML?',
-        answers: ['#',
-            '!',
-            '/',
-            '\\'],
-        correctAnswer: '/'
+        "question": "Which type of Programming does Python support?",
+        "answers": [
+            "a) object-oriented programming",
+            "b) structured programming",
+            "c) functional programming",
+            "d) all of the mentioned"
+        ],
+        "correctAnswer": "d\nExplanation: Python is an interpreted programming language, which supports object-oriented, structured, and functional programming."
     },
     {
-        question: 'Among the following, which is the HTML paragraph tag?',
-        answers: ['<p>',
-            '<pre>',
-            '<hr>',
-            '<a>'],
-        correctAnswer: '<p>'
+        "question": "Is Python case sensitive when dealing with identifiers?",
+        "answers": [
+            "a) no",
+            "b) yes",
+            "c) machine dependent",
+            "d) none of the mentioned"
+        ],
+        "correctAnswer": "b\nExplanation: Case is always significant while dealing with identifiers in python."
     },
     {
-        question: 'In HTML, which attribute is used to create a link that opens in a new window tab?',
-        answers: ['src=”_blank”', 
-            'alt=”_blank”',
-            'target=”_self',
-            'target=”_blank”'],
-        correctAnswer: 'target=”_blank”'
+        "question": "Which of the following is the correct extension of the Python file?",
+        "answers": [
+            "a) .python",
+            "b) .pl",
+            "c) .py",
+            "d) .p"
+        ],
+        "correctAnswer": "c\nExplanation: ‘.py’ is the correct extension of the Python file. Python programs can be written in any text editor. To save these programs we need to save in files with file extension ‘.py’."
     },
     {
-        question: 'Which HTML element is used for short quote?',
-        answers: ['<em>',
-            '<abbr>',
-            '<q>',
-            '<blockquote>'],
-        correctAnswer: '<q>'
+        "question": "Is Python code compiled or interpreted?",
+        "answers": [
+            "a) Python code is both compiled and interpreted",
+            "b) Python code is neither compiled nor interpreted",
+            "c) Python code is only compiled",
+            "d) Python code is only interpreted"
+        ],
+        "correctAnswer": "a\nExplanation: Many languages have been implemented using both compilers and interpreters, including C, Pascal, and Python."
     },
     {
-        question: ' Which of the following HTML tag is used to create an unordered list?',
-        answers: ['<ol>',
-            '<ul>',
-            '<li>',
-            '<ll>'],
-        correctAnswer: '<ul>'
+        "question": "All keywords in Python are in _________",
+        "answers": [
+            "a) Capitalized",
+            "b) lower case",
+            "c) UPPER CASE",
+            "d) None of the mentioned"
+        ],
+        "correctAnswer": "d\nExplanation: True, False and None are capitalized while the others are in lower case."
     },
     {
-        question: 'Which HTML element is used for abbreviation or acronym?',
-        answers: ['<abbr>',
-            '<blockquote>',
-            '<q>',
-            '<em>'],
-        correctAnswer: '<abbr>'
+        "question": "Which of the following is used to define a block of code in Python language?",
+        "answers": [
+            "a) Indentation",
+            "b) Key",
+            "c) Brackets",
+            "d) All of the mentioned"
+        ],
+        "correctAnswer": "a\nExplanation: In Python, to define a block of code we use indentation. Indentation refers to whitespaces at the beginning of the line."
     },
     {
-        question: 'Which of the following HTML tag is used to add a row in a table?',
-        answers: ['<th>',
-            '<td>',
-            '<tr>',
-            '<tt>'],
-        correctAnswer: '<tr>'
+        "question": "Which keyword is used for function in Python language?",
+        "answers": [
+            "a) Function",
+            "b) def",
+            "c) Fun",
+            "d) Define"
+        ],
+        "correctAnswer": "b\nExplanation: The def keyword is used to create, (or define) a function in python."
     },
     {
-        question: 'What is the work of <address> element in HTML5?',
-        answers: ['contains IP address', 
-            'contains home address',
-            'contains url',
-            'contains contact details for author'],
-        correctAnswer: 'contains contact details for author'
+        "question": "Which of the following character is used to give single-line comments in Python?",
+        "answers": [
+            "a) //",
+            "b) #",
+            "c) !",
+            "d) /*"
+        ],
+        "correctAnswer": "b\nExplanation: To write single-line comments in Python use the Hash character (#) at the beginning of the line. It is also called number sign or pound sign. To write multi-line comments, close the text between triple quotes.\nExample: “”” comment\ntext “””"
     },
     {
-        question: 'Which of the following tag is used to create a text area in HTML Form?',
-        answers: ['<textarea> </textarea>',
-            '<text></text>',
-            '<input type=”text” />',
-            '<input type=”textarea” />'],
-        correctAnswer: '<textarea> </textarea>'
+        "question": "Which of the following functions can help us to find the version of python that we are currently working on?",
+        "answers": [
+            "a) sys.version(1)",
+            "b) sys.version(0)",
+            "c) sys.version()",
+            "d) sys.version"
+        ],
+        "correctAnswer": "d\nExplanation: The function sys.version can help us to find the version of python that we are currently working on. It also contains information on the build number and compiler used. For example, 3.5.2, 2.7.3 etc. this function also returns the current date, time, bits etc along with the version."
     },
     {
-        question: 'To show deleted text, which HTML element is used?',
-        answers: ['<del>',
-            '<em>',
-            '<strong>',
-            '<ins>'],
-        correctAnswer: '<del>'
+        "question": "Python supports the creation of anonymous functions at runtime, using a construct called __________",
+        "answers": [
+            "a) pi",
+            "b) anonymous",
+            "c) lambda",
+            "d) none of the mentioned"
+        ],
+        "correctAnswer": "c\nExplanation: Python supports the creation of anonymous functions (i.e. functions that are not bound to a name) at runtime, using a construct called lambda. Lambda functions are restricted to a single expression. They can be used wherever normal functions can be used."
     },
     {
-        question: 'What is the correct syntax of web address?',
-        answers: ['port://domain.filenmae:path/scheme/prefix',
-            'prefix://scheme.port:domain/filename/path',
-            'path://prefix.port:domain/filename/scheme',
-            'scheme://prefix.domain:port/path/filename'],
-        correctAnswer: 'scheme://prefix.domain:port/path/filename'
+        "question": "What is the order of precedence in python?",
+        "answers": [
+            "a) Exponential, Parentheses, Multiplication, Division, Addition, Subtraction",
+            "b) Exponential, Parentheses, Division, Multiplication, Addition, Subtraction",
+            "c) Parentheses, Exponential, Multiplication, Addition, Division, Subtraction",
+            "d) Parentheses, Exponential, Multiplication, Division, Addition, Subtraction"
+        ],
+        "correctAnswer": "d\nExplanation: For order of precedence, just remember this PEMDAS (similar to BODMAS)."
     },
     {
-        question: 'Which tag is used to create a dropdown in HTML Form?',
-        answers: ['input>',
-            '<select>',
-            '<text>',
-            ' <textarea>'],
-        correctAnswer: '<select>'
+        "question": "What does pip stand for python?",
+        "answers": [
+            "a) Pip Installs Python",
+            "b) Pip Installs Packages",
+            "c) Preferred Installer Program",
+            "d) All of the mentioned"
+        ],
+        "correctAnswer": "c\nExplanation: pip is a package manager for python. Which is also called Preferred Installer Program."
     },
     {
-        question: 'Which tag is used to create a numbered list in HTML?',
-        answers: ['<ol>', 
-            '<ul>',
-            '<li>',
-            '<ll>'],
-        correctAnswer: '<ol>'
+        "question": "Which of the following is true for variable names in Python?",
+        "answers": [
+            "a) underscore and ampersand are the only two special characters allowed",
+            "b) unlimited length",
+            "c) all private members must have leading and trailing underscores",
+            "d) none of the mentioned"
+        ],
+        "correctAnswer": "b\nExplanation: Variable names can be of any length."
     },
     {
-        question: 'How to create a checkbox in HTML Form?',
-        answers: ['<input type=”text”>',
-            '<input type=”textarea”>',
-            '<input type=”checkbox”>',
-            '<input type=”button”>'],
-        correctAnswer: '<input type=”checkbox”>'
+        "question": "Which of the following is the truncation division operator in Python?",
+        "answers": [
+            "a) |",
+            "b) //",
+            "c) /",
+            "d) %"
+        ],
+        "correctAnswer": "b\nExplanation: // is the operator for truncation division. It is called so because it returns only the integer part of the quotient, truncating the decimal part. For example: 20//3 = 6."
     },
     {
-        question: 'Which of the following extension is used to save an HTML file?',
-        answers: ['.hl',
-            '.h',
-            '.htl',
-            '.html'],
-        correctAnswer: '.html'
+        "question": "Which of the following functions is a built-in function in python?",
+        "answers": [
+            "a) factorial()",
+            "b) print()",
+            "c) seed()",
+            "d) sqrt()"
+        ],
+        "correctAnswer": "b\nExplanation: The function seed is a function which is present in the random module. The functions sqrt and factorial are a part of the math module. The print function is a built-in function which prints a value directly to the system output."
     },
     {
-        question: 'Which tag is used to create a blank line in HTML?',
-        answers: ['<b>',
-            '<br>',
-            '<em>',
-            '<a>'],
-        correctAnswer: '<br>'
+        "question": "Which of the following is the use of id() function in python?",
+        "answers": [
+            "a) Every object doesn’t have a unique id",
+            "b) Id  returns the identity of the object",
+            "c) All of the mentioned",
+            "d) None of the mentioned"
+        ],
+        "correctAnswer": "b\nExplanation: Each object in Python has a unique id. The id() function returns the object’s id."
     },
     {
-        question: 'Which HTML tag is used to convert the plain text into italic format?',
-        answers: ['<b>',
-            '<p>',
-            '<i>',
-            '<a>'],
-        correctAnswer: '<a>'
+        "question": "Which of the following is not a core data type in Python programming?",
+        "answers": [
+            "a) Tuples",
+            "b) Lists",
+            "c) Class",
+            "d) Dictionary"
+        ],
+        "correctAnswer": "c\nExplanation: Class is a user-defined data type."
     },
     {
-        question: 'What is the use of <hr/> tag in HTML?',
-        answers: ['For making content appearance italics', 
-            'To create vertical rule between sections',
-            'To create a line break',
-            'To create horizontal rule between sections'],
-        correctAnswer: 'To create horizontal rule between sections'
+        "question": "Which of these is the definition for packages in Python?",
+        "answers": [
+            "a) A set of main modules",
+            "b) A folder of python modules",
+            "c) A number of files containing Python definitions and statements",
+            "d) A set of programs making use of Python modules"
+        ],
+        "correctAnswer": "b\nExplanation: A folder of python programs is called as a package of modules."
     },
     {
-        question: 'Which attribute is not essential under <iframe>?',
-        answers: ['frameborder',
-            'width',
-            'height',
-            'src'],
-        correctAnswer: 'frameborder'
+        "question": "What is the order of namespaces in which Python looks for an identifier?",
+        "answers": [
+            "a) Python first searches the built-in namespace, then the global namespace and finally the local namespace",
+            "b) Python first searches the built-in namespace, then the local namespace and finally the global namespace",
+            "c) Python first searches the local namespace, then the global namespace and finally the built-in namespace",
+            "d) Python first searches the global namespace, then the local namespace and finally the built-in namespace"
+        ],
+        "correctAnswer": "c\nExplanation: Python first searches for the local, then the global and finally the built-in namespace."
     },
     {
-        question: 'Which works similar to <b> element?',
-        answers: ['<blockquote>',
-            '<strong>',
-            '<em>',
-            '<i>'],
-        correctAnswer: '<strong>'
+        "question": "Which one of the following is not a keyword in Python language?",
+        "answers": [
+            "a) pass",
+            "b) eval",
+            "c) assert",
+            "d) nonlocal"
+        ],
+        "correctAnswer": "b\nExplanation: eval can be used as a variable."
     },
     {
-        question: 'Which tag is used to underline the text in HTML?',
-        answers: ['<p>',
-            '<u>',
-            '<i>',
-            '<ul>'],
-        correctAnswer: '<u>'
+        "question": "Which module in the python standard library parses answers received from the command line?",
+        "answers": [
+            "a) getarg",
+            "b) getopt",
+            "c) main",
+            "d) os"
+        ],
+        "correctAnswer": "b\nExplanation: getopt parses answers received from the command line."
     },
     {
-        question: 'Which attribute specifies a unique alphanumeric identifier to be associated with an element?',
-        answers: ['type',
-            'article',
-            'id',
-            'class'],
-        correctAnswer: 'id'
+        "question": "What arithmetic operators cannot be used with strings in Python?",
+        "answers": [
+            "a) *",
+            "b) –",
+            "c) +",
+            "d) All of the mentioned"
+        ],
+        "correctAnswer": "b\nExplanation: + is used to concatenate and * is used to multiply strings."
     },
     {
-        question: 'Which of the following is an HTML specification used to add more information to HTML tags?',
-        answers: ['Modifydata', 
-            'Minidata',
-            'Macrodata',
-            'Microdata'],
-        correctAnswer: 'Microdata'
+        "question": "Which of the following statements is used to create an empty set in Python?",
+        "answers": [
+            "a) ( )",
+            "b) [ ]",
+            "c) { }",
+            "d) set()"
+        ],
+        "correctAnswer": "d\nExplanation: { } creates a dictionary not a set. Only set() creates an empty set."
     },
     {
-        question: 'Which HTML element is used for YouTube videos?',
-        answers: ['<samp>',
-            '<small>',
-            '<frame>',
-            '<iframe>'],
-        correctAnswer: '<iframe>'
+        "question": "To add a new element to a list we use which Python command?",
+        "answers": [
+            "a) list1.addEnd(5)",
+            "b) list1.addLast(5)",
+            "c) list1.append(5)",
+            "d) list1.add(5)"
+        ],
+        "correctAnswer": "c\nExplanation: We use the function append to add an element to the list."
     },
     {
-        question: 'Which of the following HTML element is used for canvas graphics?',
-        answers: ['<css>',
-            '<paint>',
-            '<canvas>',
-            '<graphic>'],
-        correctAnswer: '<canvas>'
+        "question": "Which one of the following is the use of function in python?",
+        "answers": [
+            "a) Functions don’t provide better modularity for your application",
+            "b) you can’t also create your own functions",
+            "c) Functions are reusable pieces of programs",
+            "d) All of the mentioned"
+        ],
+        "correctAnswer": "c\nExplanation: Functions are reusable pieces of programs. They allow you to give a name to a block of statements, allowing you to run that block using the specified name anywhere in your program and any number of times."
     },
     {
-        question: 'The correct sequence of HTML tags for starting a webpage is ?',
-        answers: ['Head, Title, HTML, body',
-            'HTML, Body, Title, Head',
-            'HTML, Head, Title, Body',
-            'HTML, Head, Title, Body'],
-        correctAnswer: 'HTML, Head, Title, Body'
+        "question": "What is the maximum possible length of an identifier in Python?",
+        "answers": [
+            "a) 79 characters",
+            "b) 31 characters",
+            "c) 63 characters",
+            "d) none of the mentioned"
+        ],
+        "correctAnswer": "d\nExplanation: Identifiers can be of any length."
     },
     {
-        question: 'Which of the following tag is used for inserting the largest heading in HTML?',
-        answers: ['<h3>',
-            '<h1>',
-            '<h5>',
-            '<h6>'],
-        correctAnswer: '<h1>'
+        "question": "What are the two main types of functions in Python?",
+        "answers": [
+            "a) System function",
+            "b) Custom function",
+            "c) Built-in function & User defined function",
+            "d) User function"
+        ],
+        "correctAnswer": "c\nExplanation: Built-in functions and user defined ones. The built-in functions are part of the Python language. Examples are: dir(), len() or abs(). The user defined functions are functions created with the def keyword."
     },
     {
-        question: 'What is HTML?',
-        answers: ['HTML describes the structure of a webpage', 
-            'HTML is the standard markup language mainly used to create web pages',
-            'HTML consists of a set of elements that helps the browser how to view the content',
-            'All of the mentioned'],
-        correctAnswer: 'All of the mentioned'
+        "question": "Which of the following is a Python tuple?",
+        "answers": [
+            "a) {1, 2, 3}",
+            "b) {}",
+            "c) [1, 2, 3]",
+            "d) (1, 2, 3)"
+        ],
+        "correctAnswer": "d\nExplanation: Tuples are represented with round brackets."
     },
     {
-        question: 'Who is the father of HTML?',
-        answers: ['Rasmus Lerdorf',
-            'Tim Berners-Lee',
-            'Brendan Eich',
-            'Sergey Brin'],
-        correctAnswer: 'Tim Berners-Lee'
+        "question": "Which of the following is a feature of Python DocString?",
+        "answers": [
+            "a) In Python all functions should have a docstring",
+            "b) Docstrings can be accessed by the __doc__ attribute on objects",
+            "c) It provides a convenient way of associating documentation with Python modules, functions, classes, and methods",
+            "d) All of the mentioned"
+        ],
+        "correctAnswer": "d\nExplanation: Python has a nifty feature called documentation strings, usually referred to by its shorter name docstrings. DocStrings are an important tool that you should make use of since it helps to document the program better and makes it easier to understand."
     },
     {
-        question: 'HTML stands for __________',
-        answers: ['HyperText Markup Language',
-            'HyperText Machine Language',
-            'HyperText Marking Language',
-            'HighText Marking Language'],
-        correctAnswer: 'HyperText Markup Language'
+        "question": "What is output of print(math.pow(3, 2))?",
+        "answers": [
+            "a) 9.0",
+            "b) None",
+            "c) 9",
+            "d) None of the mentioned"
+        ],
+        "correctAnswer": "a\nExplanation: math.pow() returns a floating point number."
     },
     {
-        question: 'Who is the father of HTML?',
-        answers: ['Rasmus Lerdorf',
-            'Tim Berners-Lee',
-            'Brendan Eich',
-            'Sergey Brin'],
-        correctAnswer: 'Tim Berners-Lee'
+        "question": "Which of the following is the use of id() function in python?",
+        "answers": [
+            "a) Every object in Python doesn’t have a unique id",
+            "b) In Python Id function returns the identity of the object",
+            "c) None of the mentioned",
+            "d) All of the mentioned"
+        ],
+        "correctAnswer": "b\nExplanation: Each object in Python has a unique id. The id() function returns the object’s id."
     },
     {
-        question: 'HTML stands for __________',
-        answers: ['HyperText Markup Language',
-            'HyperText Machine Language',
-            'HyperText Marking Language',
-            'HighText Marking Language'],
-        correctAnswer: 'HyperText Markup Language'
+        "question": "The process of pickling in Python includes ____________",
+        "answers": [
+            "a) conversion of a Python object hierarchy into byte stream",
+            "b) conversion of a datatable into a list",
+            "c) conversion of a byte stream into Python object hierarchy",
+            "d) conversion of a list into a datatable"
+        ],
+        "correctAnswer": "a\nExplanation: Pickling is the process of serializing a Python object, that is, conversion of a Python object hierarchy into a byte stream. The reverse of this process is known as unpickling."
     },
 ];
 

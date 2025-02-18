@@ -96,6 +96,9 @@ body {
     padding: 1rem 1rem;
   
 }
+.quit:hover {
+    background: rgb(241, 86, 86);
+}
 
 .previous {
     color: white;
@@ -106,7 +109,13 @@ body {
     cursor: pointer;
     padding: 1rem;
 }
+.previous:hover {
+    background: rgba(116, 112, 238, 0.794);
+}
 
+.next:hover {
+    background: rgba(116, 112, 238, 0.794);
+}
 .quiz_container {
     background-color: white;
     position: absolute;
@@ -230,4 +239,36 @@ body {
 .incorrect {
     color: red;
     font-weight: bold;
+}
+
+.score_container {
+    background-color: white;
+    position: absolute;
+    border-radius: 5px;
+    padding: 5rem 5rem;
+    display: flex;
+    margin: 5rem;
+    flex-direction: column;
+    justify-self: center;
+    top: 40%;
+    left: 50%;
+    transform: translate(-60%, -40%);
+    display: none;
+}
+.score_container h1 {
+    color: #8458B3;
+}
+
+.score_container button {
+    background: rgba(11, 4, 217, 0.794);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.score_container button:hover {
+    background: rgba(116, 112, 238, 0.794);
 }

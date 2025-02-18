@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Jasper Quiz App</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -34,7 +34,9 @@
         <header>
             <div class="quiz_header">
                 <div>Question <span class="question_number">1</span> of 50</div>
+                <div><span class="score">0</span></div>
                 <div class="timer">Time Left: <span class="time">30:00</span></div>
+                
             </div>
         </header>
         <div class="quiz_page">
@@ -48,9 +50,11 @@
             </div>  
         </div>
     </div>
-    <!-- <div class="score_page">
-        <div>Your score: <span>0</span></div>
-   </div> -->
+    <div class="score_container">
+        <h1>Quiz Completed!</h1>
+        <h2><span class="score"></span>%</h2>
+        <button onclick="restartQuiz()">Try Again</button>
+   </div>
 
     <script src="main.js"></script>
 </body>

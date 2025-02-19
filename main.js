@@ -40,15 +40,6 @@ const questions = [
         correctAnswer: "a\nExplanation: An array in JavaScript is an ordered list of values, each value is referred to as an element, and it is identified by an index. An array can include values of many sorts and the length of an array dynamically sized."
     },
     {
-        question: "a) false",
-        answers: [
-            "b) true",
-            "c) compilation error",
-            "d) runtime error"
-        ],
-        correctAnswer: "a\nExplanation: A === operator in JS is only true if the operands are of the same type and the contents match. Two strings are strictly equal when they have the same sequence of characters, same length, and same characters in corresponding positions. In this case, we are comparing an integer and a string so it will be false."
-    },
-    {
         question: "Which of the following is not javascript data types?",
         answers: [
             "a) Null type",
@@ -516,6 +507,8 @@ const answerContainer = document.querySelector(".answers");
 const questionNumber = document.querySelector(".question_number");
 const feedback = document.querySelector(".feedback");
 const userAnswers = []; 
+const welcome = document.querySelector(".welcome");
+const scorePage = document.querySelector(".score_container");
 let userScore = 0;
 let storedTime = localStorage.getItem("quizTimer");
 let totalTime = storedTime !== null ? parseInt(storedTime) : 30 * 60; 
@@ -603,7 +596,7 @@ document.addEventListener("click", (event) => {
 
         if (currentQuestionIndex < questions.length - 1) {
             currentQuestionIndex++;
-            setTimeout(loadQuestion, 1000);
+            loadQuestion();
         } else {
             setTimeout(() => {
                 alert(`Quiz completed! Your final score is ${userScore}/${questions.length}`);
@@ -681,6 +674,10 @@ function startGlobalTimer() {
         localStorage.setItem("quizTimer", totalTime);
 
     }, 1000);
+}
+function restartQuiz() {
+    scorePage.style.display = "none";
+    welcome.style.display = "flex";
 }
 
 function endQuiz() {
